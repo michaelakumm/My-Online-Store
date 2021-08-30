@@ -1,0 +1,170 @@
+/********** Overall styling **********/
+.container {
+    padding: 30px 80px 80px;
+    margin: 0px;
+    min-width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(182, 216, 179), rgb(248, 255, 247));
+}
+
+p {
+    font-size: 18px;
+}
+
+h1,
+h2 {
+    font-family: Cinzel, serif;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+}
+
+/********** Nav **********/
+.banner {
+    background: rgb(52, 58, 64);
+    color: white;
+    padding: 7px 0px;
+    display: flex;
+}
+
+marquee {
+    font-size: 15px;
+}
+
+marquee span {
+    font-weight: 700;
+    padding: 0 7px;
+}
+
+nav {
+    margin: 0;
+    padding: 0px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    color: white;
+}
+
+.navbar-nav {
+    font-size: 19px;
+}
+
+.cart ion-icon {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+/* LEVEL ONE */
+ul.dropdown {
+    position: relative;
+}
+
+
+ul.dropdown li a {
+    display: block;
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+    position: relative;
+}
+
+
+/* LEVEL TWO  */
+ul.dropdown ul {
+    width: 200px;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    background: rgb(52, 58, 64);
+    padding: 8px 8px 10px 10px;
+    margin-left: 8px;
+}
+
+ul.dropdown ul li {
+    font-weight: normal;
+    background: rgb(52, 58, 64);
+    float: none;
+    list-style-type: none;
+}
+
+ul.dropdown ul li a {
+    border-right: none;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+ul.dropdown ul li a:hover {
+    color: rgba(255, 255, 255, .55);
+}
+
+
+/********** Image header and text **********/
+.header-image {
+    background-image: url("/Images/header-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/********** Product cards **********/
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card,
+.img-thumbnail {
+    border-radius: 25px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: currentColor;
+}
+
+.btn-success {
+    border-radius: 25px;
+}
+
+
+/********** Footer **********/
+footer {
+    padding-top: 50px;
+}
+
+footer ul {
+    display: inline-flex;
+    gap: 50px;
+}
+
+footer a {
+    color: black;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: black;
+}
+
+.footer {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}

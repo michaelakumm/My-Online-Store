@@ -1,0 +1,15 @@
+/********** Header **********/
+.header-image {
+    height: 150px;
+}
+
+/********** Product cards **********/
+.thumbnail-image img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: 500;
+}

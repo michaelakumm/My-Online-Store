@@ -1,0 +1,13 @@
+FIXME:
+Website works using live server, but not if it is opened directly opened from the project folder
+
+- HTML loads
+- CSS does not load
+- Hyperlinks do not work
+- Images do not show up
+- Local storage does not work
+- Number of cart items stay at 0
+- There is no header image or text
+- Font styles do not load
+- No margin or padding
+

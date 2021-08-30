@@ -1,0 +1,40 @@
+/********** Header section **********/
+.header-image {
+    height: 450px;
+}
+
+.header-text h1 {
+    font-size: 50px;
+}
+
+/********** About us section **********/
+#about-us a {
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#about-us a:hover {
+    font-weight: 500;
+}
+
+/********** Top 4 picks **********/
+#top-4-picks .card {
+    width: 350px;
+}
+
+#top-4-picks img {
+    width: 100%;
+    height: auto;
+}
+
+/********** Feedback cards **********/
+.stars ion-icon {
+    padding-bottom: 3px;
+}
+
+.feedback {
+    padding: 20px;
+    width: 450px;
+    justify-content: center;
+}

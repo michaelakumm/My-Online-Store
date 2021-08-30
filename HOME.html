@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Michaela's Creations</title>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ion Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/HOME.css">
+
+    <!-- JavaScript link -->
+    <script src="/JavaScript/store-js.js" async></script>
+
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <marquee>USE CODE <span>MCREATE10</span> FOR 10% OFF YOUR CART</marquee>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark position-sticky">
+        <!-- The store's name -->
+        <a class="navbar-brand" href="/HOME.html">Michaela's Creations</a>
+
+        <!-- This contains the collapse button for when the screen -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!-- These are the hyperlinks to the rest of the page and are in the collapsible navbar -->
+            <ul class="navbar-nav dropdown">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/HOME.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/catalogue.html">Catalogue</a>
+                        <ul class="sub-menu">
+                            <li><a href="/catalogue.html#heading-tops">Tops and T-shirts</a></li>
+                            <li><a href="/catalogue.html#heading-bottoms">Bottoms</a></li>
+                            <li><a href="/catalogue.html#heading-shoes">Shoes</a></li>
+                            <li><a href="/catalogue.html#heading-accessories">Accessories</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/shipping-info.html">Shipping Info</a>
+                </li>
+                <li class="cart nav-item">
+                    <a class="nav-link" href="/cart.html">
+                        <ion-icon name="bag"></ion-icon> Cart <span id="total-cart-items">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main section of the webpage -->
+    <div role="main" class="container" id="top-page">
+
+        <!-- Store name and header image -->
+        <div class="header-image">
+            <!-- Image customised -->
+            <div class="header-text">
+                <h1>Michaela's Creations</h1>
+            </div>
+        </div>
+
+        <!-- About us section -->
+        <div id="about-us">
+            <h2>About Us</h2>
+            <p>
+                Our business is about family, loyalty, mutual respect and love. We work hard and we play hard. We
+                believe everyone has potential. Our management style and atmosphere is relaxed. We love our country and
+                want to work with South Africans to make it great. We are incredibly proud to be a South African
+                business, doing what we love, in our beautiful country.
+                <br>
+                <a href="/about-us.html">
+                    View more here
+                </a>
+            </p>
+        </div>
+
+        <!-- The catalogue containing top 4 picks -->
+        <div class="heading-top-4-picks" id="top-4-picks">
+            <h2>Top 4 Picks</h2>
+            <div class="row card-deck">
+                <!-- This is the 1st item -->
+                <div class="card">
+                    <!-- According to Bootstrap, a thumbnail is a component that gives an image a 1px border -->
+                    <img class="card-img-top img-thumbnail img-fluid" src="/Images/top-1.jpg" alt="Item 1">
+                    <!-- A responsive image is an image that can automatically adjust to fit the size of the screen -->
+                    <div class="card-body">
+                        <h4 class="card-title product-heading">High Neck Knit Tank</h4>
+                        <br>
+                        <a href="/Items/item1.html" class="btn btn-success">View more</a>
+                        <!-- Implemented buttons customised -->
+                    </div>
+                </div>
+                <!-- This is the 2nd item -->
+                <div class="card">
+                    <img class="card-img-top img-thumbnail img-fluid" src="/Images/shoe-3.jpg" alt="Item 9">
+                    <div class="card-body">
+                        <h4 class="card-title product-heading">Ankle Strap Block Heel Sandals</h4>
+                        <br>
+                        <a href="/Items/item9.html" class="btn btn-success">View more</a>
+                    </div>
+                </div>
+                <!-- This is the 3rd item -->
+                <div class="card">
+                    <img class="card-img-top img-thumbnail img-fluid" src="/Images/bottom-1.jpg" alt="Item 4">
+                    <div class="card-body">
+                        <h4 class="card-title product-heading">Super Soft Boyfriend Jeans</h4>
+                        <br>
+                        <a href="/Items/item4.html" class="btn btn-success">View more</a>
+                    </div>
+                </div>
+                <!-- This is the 4th item -->
+                <div class="card">
+                    <img class="card-img-top img-thumbnail img-fluid" src="/Images/accessory-2.jpg" alt="Item 11">
+                    <div class="card-body">
+                        <h4 class="card-title product-heading">Layered Multi Bead Bracelet</h4>
+                        <br>
+                        <a href="/Items/item11.html" class="btn btn-success">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- This is where you can find some feedback from previous customers -->
+        <div id="customer-feedback">
+            <h2>Top Feedback</h2>
+            <div class="row card-deck">
+                <!-- 1st -->
+                <div class="card feedback">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h5 class="card-title">Adam K.</h5>
+                    <div class="card-text">
+                        Great prices, no minimums, early delivery, and exactly what I wanted. The shirts are of the
+                        quality I expected for the price I paid. Thank you, Michaela's Creations!
+                    </div>
+                </div>
+                <!-- 2nd -->
+                <div class="card feedback">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h5 class="card-title">Crystal W.</h5>
+                    <div class="card-text">
+                        The website was very user friendly. Their prices plus shipping was the lowest I found online.
+                        Products were delivered very quickly and the order was correct. I'll order from them
+                        every chance I get.
+                    </div>
+                </div>
+                <!-- 3rd -->
+                <div class="card feedback">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h5 class="card-title">Naomi S.</h5>
+                    <div class="card-text">
+                        Simple to order and did not take long to receive order. Quality of t-shirts ordered was good.
+                        They fit well. Encountered no problems with whole process. Satisfied customer.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <footer>
+            <!-- Contact information -->
+            <div>
+                <p>
+                    <h5>Contact Information:<br></h5>
+                </p>
+                <ul>
+                    <li>
+                        Email us here at <a href="mailto:mkumm0799239321@gmail.com">mkumm0799239321@gmail.com</a>
+                    </li>
+                    <li>Call us at <b>079 923 9321</b></li>
+                </ul>
+            </div>
+            <!-- The footer has the author of the webpage -->
+            <div class="footer">
+                <p>
+                    -Website created by Michaela Kumm-
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

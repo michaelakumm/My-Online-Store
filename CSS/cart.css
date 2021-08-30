@@ -1,0 +1,146 @@
+/********** Header **********/
+.header-image {
+    height: 150px;
+}
+
+/********** Cart page **********/
+.products-container {
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 50px auto 0;
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: rgb(39, 39, 39);
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid rgb(39, 39, 39);
+    margin: 0 auto;
+}
+
+.product-row {
+    display: flex;
+    width: 100%;
+}
+
+.product-title,
+.product {
+    width: 47%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    margin: 0;
+}
+
+.price-title,
+.price {
+    width: 15%;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+.quantity-title,
+.quantity {
+    width: 20%;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+.total-title,
+.total {
+    width: 18%;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+.product ion-icon {
+    cursor: pointer;
+}
+
+.product,
+.price,
+.quantity,
+.total {
+    font-size: 18px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product img {
+    width: 100px;
+    padding: 0 10px;
+    border-radius: 25px;
+}
+
+.beforeVATContainer,
+.VATContainer,
+.basketTotalContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.beforeVATContainer {
+    padding: 20px 0 5px 0;
+}
+
+.VATContainer {
+    padding: 0 0 5px 0;
+}
+
+.beforeVATTitle,
+.VATTitle,
+.basketTotalTitle {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.beforeVAT,
+.VATAmount,
+.basketTotal {
+    width: 18%;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+}
+
+.beforeVATTitle,
+.beforeVAT,
+.VATTitle,
+.VATAmount {
+    font-weight: normal;
+}
+
+#clear-cart,
+#proceed-to-checkout {
+    font-size: 20px;
+    margin: 0 50px;
+}

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Michaela's Creations | Checkout</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+    <!-- Ion Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/checkout.css">
+
+    <!-- JavaScript link -->
+    <!-- <script src="/JavaScript/store-js.js" async></script> -->
+    <script src="/JavaScript/checkout-js.js" async></script>
+
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <marquee>USE CODE <span>MCREATE10</span> FOR 10% OFF YOUR CART</marquee>
+    </div>
+
+    <!-- Main section of the webpage -->
+    <div role="main" class="container row" id="top-page">
+
+        <!-- Checkout details -->
+        <div class="checkout-details col">
+            <h1 class="store-name"><a href="/HOME.html">Michaela's Creations</a></h1>
+
+            <div class="path">
+                <a href="/cart.html">Cart</a><span>&gt;</span><a href="#" class="active">Checkout</a>
+            </div>
+
+            <div class="accordion--form">
+                <div class="accordion--form__fieldset shipping-info" id="fieldset-one">
+                    <h2 class="accordion--form__legend">Shipping Information</h2>
+
+                    <div class="accordion--form__wrapper accordion--form__wrapper-active">
+                        <div class="shipping-address-input accordion--form__row">
+                            <input type="text" name="address" id="address" class="address input accordion--form__text required" placeholder="Address *" required>
+                            <input type="text" name="address-2" id="address-2" class="address-2 input accordion--form__text" placeholder="Apartment, suite, etc. (optional)">
+                            <input type="text" name="city" id="city-input" class="city input accordion--form__text required" placeholder="City *" required>
+                            <div class="input province-wrapper">
+                                <label class="province drop-select-label" for="province-select">Province:</label>
+                                <select name="province-select" class="province-select drop-select" id="province-select">
+                                    <option>--- Select province ---</option>
+                                    <option value="EC">Eastern Cape</option>
+                                    <option value="FS">Free State</option>
+                                    <option value="GT">Gauteng</option>
+                                    <option value="NL">KwaZulu-Natal</option>
+                                    <option value="LP">Limpopo</option>
+                                    <option value="MP">Mpumalanga</option>
+                                    <option value="NW">North West</option>
+                                    <option value="NC">Northern Cape</option>
+                                    <option value="WC">Western Cape</option>
+                                </select>
+                            </div>
+                            <input type="text" name="postal-code" id="postal-code" class="postal-code input accordion--form__text" placeholder="Postal code">
+                        </div>
+                        <div class="checkbox-wrapper accordion--form__row">
+                            <input type="checkbox" name="save-info" id="save-info" class="checkbox save-info">
+                            <label for="checkbox" class="checkbox-label">Save this information for next time</label>
+                        </div>
+                        <a class="input submit-btn accordion--form__next-btn" id="shipping-info-next-btn">Next</a>
+                        <div class="accordion--form__invalid">Please ensure all fields containing a * are filled in</div>
+                    </div>
+                </div>
+
+                <div class="accordion--form__fieldset shipping-method" id="fieldset-two">
+                    <h2 class="accordion--form__legend">Shipping Method</h2>
+
+                    <div class="accordion--form__wrapper">
+                        <div class="shipping-method-input accordion--form__row">
+                            <form class="input shipping-method-form" id="shipping-method-form">
+                                <div class="collect">
+                                    <input type="radio" name="shipping" id="collect" value="0" checked>
+                                    <label for="collect">Collect from branch</label>
+                                    <div class="price">
+                                        <span class="price" id="collect-price">FREE</span>
+                                    </div>
+                                </div>
+                                <div class="standard-delivery">
+                                    <input type="radio" name="shipping" id="standard-delivery" value="">
+                                    <label for="standard-delivery">Standard delivery</label>
+                                    <div class="price">
+                                        <span class="price" id="standard-delivery-price">-</span>
+                                    </div>
+                                </div>
+                                <div class="over-night-delivery">
+                                    <input type="radio" name="shipping" id="over-night-delivery" value="">
+                                    <label for="over-night-delivery">Over night delivery</label>
+                                    <div class="price">
+                                        <span class="price" id="over-night-delivery-price">-</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a class="input submit-btn accordion--form__next-btn" id="shipping-method-next-btn">Next</a>
+                        <a class="input submit-btn accordion--form__prev-btn">Previous</a>
+                        <div class="accordion--form__invalid">Please ensure all fields containing a * are filled in</div>
+                    </div>
+                </div>
+
+                <div class="accordion--form__fieldset contact-info" id="fieldset-three">
+                    <h2 class="accordion--form__legend">Contact Information</h2>
+
+                    <div class="accordion--form__wrapper">
+                        <div class="contact-info-form" id="contact-info-form">
+                            <div class="contact-info-input accordion--form__row">
+                                <div class="input collection-wrapper" id="collection-wrapper">
+                                    <label class="drop-select-label" for="branch-select">Collect from:</label>
+                                    <select name="branch-select" class="branch-select drop-select" id="branch-select">
+                                        <option>--- Select a branch ---</option>
+                                        <option value="Beacon Bay">Beacon Bay</option>
+                                        <option value="Vincent">Vincent</option>
+                                    </select>
+                                </div>
+                                <input type="text" name="first-name" id="first-name" class="first-name input accordion--form__text required" placeholder="First name *" required>
+                                <input type="text" name="last-name" id="last-name" class="last-name input accordion--form__text required" placeholder="Last name *" required>
+                                <input type="email" name="email" id="email-input" class="email-input input accordion--form__text required" placeholder="Enter your Email *" required>
+                                <input type="text" name="phone" id="phone" class="phone input accordion--form__text required" placeholder="Phone *" required>
+                            </div>
+                        </div>
+                        <div class="checkbox-wrapper accordion--form__row">
+                            <input type="checkbox" name="save-info" id="save-info" class="checkbox save-info">
+                            <label for="checkbox" class="checkbox-label">Save this information for next time</label>
+                        </div>
+                        <a class="input submit-btn accordion--form__next-btn">Next</a>
+                        <a class="input submit-btn accordion--form__prev-btn">Previous</a>
+                        <div class="accordion--form__invalid">Please ensure all fields containing a * are filled in</div>
+                    </div>
+                </div>
+
+                <div class="confirm-order-button">
+                    <button type="submit" class="input submit-btn confirm-order-btn" id="confirm-order-btn">Confirm order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order summary -->
+        <div class="order-summary col">
+            <div class="cart-summary-section">
+                <div class="cart-summary-items">
+                    <table class="cart-item-table" id="cart-item-table">
+                    </table>
+                </div>
+            </div>
+            <div class="discount-section">
+                <input type="text" class="input dicount-code-input" id="discount-code-input" placeholder="Enter discount code">
+                <input type="button" value="Apply" class="input apply-btn" id="apply-discount-btn">
+            </div>
+            <div class="fees" id="fees-section">
+                <div class="sub-total">
+                    Subtotal
+                    <div class="sub-total-amount">
+                        R<span id="sub-total-amount">0.00</span>
+                    </div>
+                </div>
+                <div class="discount">
+                    Discount
+                    <div class="discount-amount">
+                        R<span id="discount-amount">0.00</span>
+                    </div>
+                </div>
+                <div class="shipping-fee">
+                    Shipping
+                    <div class="shipping-fee-amount">
+                        R<span id="shipping-fee-amount">0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                Total
+                <div class="final-amount">
+                    R<span id="final-amount">0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order successful text container -->
+        <div id="order-success-container" class="order-success-container" style="visibility: hidden;">
+            <div class="order-success-content">
+                <div class="order-successful">
+                    Your order was successful!
+                </div>
+                <div class="generate-reference">
+                    Your reference number is: <span class="reference-number" id="reference-number"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

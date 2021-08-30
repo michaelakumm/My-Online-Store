@@ -1,0 +1,37 @@
+/********** Overall styling **********/
+.shipping-page-text {
+    padding: 30px 90px;
+}
+
+/********** Header **********/
+.header-image {
+    height: 150px;
+}
+
+/********** Table **********/
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shipping-table-head {
+    border-bottom-style: double;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+/********** Link **********/
+.shipping-page-text a {
+    color: black;
+    text-decoration: underline;
+}
